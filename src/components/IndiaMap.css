@@ -1,0 +1,321 @@
+
+.india-map-section {
+  width: 100%;
+  padding: 15px;
+  background: #ffffff;
+  color: #201b35;
+}
+
+.india-map-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.section-kicker {
+  color: #8b5ce5;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.india-map-heading h2 {
+  font-family: Outfit, sans-serif;
+  font-size: 35px;
+  color: #201b35;
+  margin-top: 8px;
+}
+
+.india-map-heading h2 span {
+  color: #8956e9;
+}
+
+.india-map-heading p {
+  color: #817b91;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.india-count {
+  color: #8960d7;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.india-map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: center;
+  gap: 15px;
+}
+
+.india-map-visual,
+.district-map-card {
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #eee9f7;
+  border-radius: 18px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.india-map-visual svg,
+.district-map-card svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.tamil-nadu-state {
+  animation: tamilGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes tamilGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px #a77cff);
+  }
+  50% {
+    filter: drop-shadow(0 0 9px #a77cff);
+  }
+}
+
+.map-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  font-size: 10px;
+  color: #777187;
+}
+
+.map-selection-info {
+  padding: 22px 17px;
+  border-radius: 15px;
+  background: #f8f5ff;
+}
+
+.map-selection-info h3 {
+  font-family: Outfit, sans-serif;
+  color: #6f45c5;
+  font-size: 22px;
+  margin-top: 18px;
+}
+
+.map-selection-info p {
+  color: #777187;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-top: 9px;
+}
+
+.map-selection-info button {
+  margin-top: 20px;
+  background: #8956e9;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 13px;
+  font-size: 11px;
+}
+
+.map-selection-info button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.district-map-card {
+  padding: 12px;
+  box-shadow: 0 12px 35px #39206b0a;
+}
+
+.district-map-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  fill: #413653;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 2.5px;
+  stroke-linejoin: round;
+}
+
+.district-map-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #777187;
+  font-size: 11px;
+  padding: 12px 8px 5px;
+}
+
+.district-map-footer span:first-child {
+  color: #8956e9;
+  font-weight: 700;
+}
+
+.map-back-button {
+  background: #f3edff;
+  color: #7546cf;
+  border: 1px solid #e5d9ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.college-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 20px 0;
+}
+
+.college-category-card {
+  min-height: 230px;
+  text-align: left;
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid #eae3f6;
+  background: #ffffff;
+  transition: .25s ease;
+}
+
+.college-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px #3e236b12;
+  border-color: #cbb5f5;
+}
+
+.government-card {
+  background: linear-gradient(145deg, #f0faf4, #ffffff);
+}
+
+.private-card {
+  background: linear-gradient(145deg, #f5f0ff, #ffffff);
+}
+
+.category-icon {
+  font-size: 32px;
+}
+
+.college-category-card h3 {
+  font-family: Outfit, sans-serif;
+  font-size: 21px;
+  color: #252039;
+  margin-top: 20px;
+}
+
+.college-category-card p {
+  color: #777187;
+  font-size: 12px;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.category-link {
+  display: inline-block;
+  color: #8050df;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 22px;
+}
+
+.college-results {
+  padding: 20px 0;
+}
+
+.college-results-heading h3 {
+  font-family: Outfit, sans-serif;
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+.college-empty-state {
+  margin-top: 20px;
+  padding: 45px 20px;
+  text-align: center;
+  background: #faf9fd;
+  border: 1px dashed #dcd2ed;
+  border-radius: 16px;
+}
+
+.college-empty-state > span {
+  font-size: 38px;
+}
+
+.college-empty-state h3 {
+  font-family: Outfit, sans-serif;
+  color: #29233c;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.college-empty-state p {
+  color: #777187;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 10px auto;
+  max-width: 400px;
+}
+
+.college-empty-state small {
+  color: #8a61d5;
+  font-size: 10px;
+}
+
+@media (max-width: 850px) {
+  .india-map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .map-selection-info {
+    padding: 18px;
+  }
+
+  .college-category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .india-map-section {
+    padding: 8px;
+  }
+
+  .india-map-heading h2 {
+    font-size: 28px;
+  }
+
+  .district-map-label {
+    font-size: 6px;
+  }
+
+  .district-map-footer {
+    font-size: 9px;
+  }
+}
+
+/* Homepage map overrides */
+.hero-map .india-map-section {
+  padding: 0;
+}
+
+.hero-map .india-map-heading {
+  display: flex !important;
+}
+
+.hero-map .india-map-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 190px !important;
+}
+
+@media (max-width: 850px) {
+  .hero-map .india-map-layout {
+    grid-template-columns: 1fr !important;
+  }
+}
